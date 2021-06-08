@@ -49,13 +49,13 @@ training data.
 
 We release the localized vulnerabilities in foler `vulnerability`. In folder
 `vulnerability/contribution`, we list the corresponding *instruction addresses* of records
-than make primary contribution on the reconstruction of media data. We further map
+that make primary contribution on the reconstruction of media data. We further map
 the pinpoined instructions back to the corresponding functions. These functions are
 regarded as **side-channel vulnerable functions**. We list the results in
 `{dataset}-{program}-count.json`, where higher counting indicates a higher possibility
 of vulnerable.
 
-Despite each program is evaluated on different datasets, we call still observe highly
+Despite each program is evaluated on different datasets, we call still observe that highly
 consistent vulnerabilities are localized in the same program.
 
 ## Prime+Probe
@@ -72,13 +72,13 @@ Then run *sudo cset shield --exec python run_pp.py -- {cpu_id} {segment_id}*. No
 seperate the media data into several segments to speed up the side channel collection.
 `code/pp/run_pp.py` calls `code/pp/pp_audio.py` with **taskset**.
 `code/pp/pp_audio.py` is the coordinator which runs *spy* and *victim* on the same CPU
-core simultaneously.
+core simultaneously and saves the collected cache set access.
 
 ## Audio
 
 We upload all (total 2,552) audios reconstructed by our framework under Prime+Probe to folder `audio/sc09-pp`
 for result verification. Each audio is named as `{Number}_{hash}_{index}.wav` and the
 `{Number}` is the content of the corresponding reference input, e.g., for
-reconstructed audio `One_94de6a6a_nohash_1.wav`, the number said in the reference input
+a reconstructed audio `One_94de6a6a_nohash_1.wav`, the number said in the reference input
 is *one*. As we reported in the paper, most (~80%) of the audios have
 consistent contents (i.e., the numbers) with the reference inputs.
