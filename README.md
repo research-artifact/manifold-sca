@@ -14,7 +14,8 @@ The repo is organized as:
  ┃ ┣ 📂SCA
  ┃ ┣ 📂tools
  ┃ ┗ 📂pp
- ┗ 📂audio
+ ┣ 📂audio
+ ┗ 📂output
 ```
 ## Code
 
@@ -82,3 +83,7 @@ for result verification. Each audio is named as `{Number}_{hash}_{index}.wav` an
 a reconstructed audio `One_94de6a6a_nohash_1.wav`, the number said in the reference input
 is *one*. As we reported in the paper, most (~80%) of the audios have
 consistent contents (i.e., the numbers) with the reference inputs.
+
+## Output
+
+We upload media data reconstructed by our framework in folder `output`.
