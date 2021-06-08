@@ -71,7 +71,7 @@ on this CPU core. To isolate a CPU core, you need to run *sudo cset shield --cpu
 
 Then run *sudo cset shield --exec python run_pp.py -- {cpu_id} {segment_id}*. Note that we
 seperate the media data into several segments to speed up the side channel collection.
-`code/pp/run_pp.py` calls `code/pp/pp_audio.py` with **taskset**.
+`code/pp/run_pp.py` runs `code/pp/pp_audio.py` with **taskset**.
 `code/pp/pp_audio.py` is the coordinator which runs *spy* and *victim* on the same CPU
 core simultaneously and saves the collected cache set access.
 
