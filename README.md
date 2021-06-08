@@ -1,6 +1,6 @@
 # manifold-sca
 
-Research artifact of *Side Channel Analysis of Media Software with Manifold Learning*.
+Research artifact of *Automated Side Channel Analysis of Media Software with Manifold Learning*.
 
 The repo is organized as:
 
@@ -54,7 +54,7 @@ that make primary contribution on the reconstruction of media data. We further m
 the pinpoined instructions back to the corresponding functions. These functions are
 regarded as **side-channel vulnerable functions**. We list the results in
 `{dataset}-{program}-count.json`, where higher counting indicates a higher possibility
-of vulnerable.
+of being vulnerable.
 
 Despite each program is evaluated on different datasets, we call still observe that highly
 consistent vulnerabilities are localized in the same program.
