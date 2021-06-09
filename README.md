@@ -48,7 +48,7 @@ to localize records in a side channel trace. Note that what you get in this step
 *instruction addresses* based on the instrument output you generated when preparing
 training data.
 
-We release the localized vulnerabilities in foler `vulnerability`. In folder
+We release the localized vulnerabilities in folder `vulnerability`. In folder
 `vulnerability/contribution`, we list the corresponding *instruction addresses* of records
 that make primary contribution on the reconstruction of media data. We further map
 the pinpoined instructions back to the corresponding functions. These functions are
