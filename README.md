@@ -5,7 +5,7 @@ Research artifact of *Automated Side Channel Analysis of Media Software with Man
 The repo is organized as:
 
 ```
-📂manifold-SCA
+📂manifold-sca
  ┣ 📂vulnerability
  ┃ ┣ 📂contribution
  ┃ ┣ 📜{dataset}-{program}-count.json
